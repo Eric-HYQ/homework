@@ -21,5 +21,8 @@ es <- lm(final~midtern)
 summary(es)
 
 # 3
-full.mid <- data.frame(midtern=c(13,16,20,20,26,23,28))
+full.mid <- data.frame(midtern=c(20))
 predict(es,newdata = full.mid, interval = "confidence")
+
+# 4
+predict(es,newdata = full.mid, interval = "prediction")
