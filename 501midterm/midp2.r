@@ -13,6 +13,7 @@ fitbest <- lm(MPG~Displacement+Horsepower
                 +Manufacturer+factor(Year)+Weight, data = data )
 summary(fitbest)
 
+anova(fitbest,fit)
 # 2
 fit2 <- lm(MPG~Displacement+Horsepower+Manufacturer+factor(Year)
              +Weight+Displacement:Weight, data = data )

@@ -27,9 +27,12 @@ shapiro.test(glu5[,2])
 
 # 3
 plot(fit)
-num <- c(dim(glu1),dim(glu2),dim(glu3),dim(glu4),dim(glu5))
-vari <- c(glu1[,2],glu2[,2],glu3[,2],glu4[,2],glu5[,2])
+num <- c(dim(glu1)[1],dim(glu2)[1],dim(glu3)[1],dim(glu4)[1],dim(glu5)[1])
+vari <- c(var(glu1[,2]),var(glu2[,2]),var(glu3[,2]),var(glu4[,2]),var(glu5[,2]))
+num
+vari
 t.test(num, vari)
+cor.test(num,vari)
 
 # 4
 bartlett.test(glu~phy)
