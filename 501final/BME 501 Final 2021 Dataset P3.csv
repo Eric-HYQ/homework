@@ -1,0 +1,14 @@
+All accidents,,
+,Died,Survived 
+Helicopter  ,64,249
+Road ambulance,260,840
+,,
+Serious accidents ,,
+,Died ,Survived 
+Helicopter ,48,129
+Road ambulance,60,40
+,,
+Less-serious accidents ,,
+,Died ,Survived 
+Helicopter ,16,120
+Road ambulance,200,800
